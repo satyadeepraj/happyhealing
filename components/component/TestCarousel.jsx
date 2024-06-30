@@ -46,8 +46,8 @@ export function TestCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="ml-8 bg" />
-      <CarouselNext className="mr-8" />
+      <CarouselPrevious className="ml-8 bg-[#c50000] text-white" />
+      <CarouselNext className="mr-8 bg-[#c50000] text-white"/>
     </Carousel>
   )
 }
