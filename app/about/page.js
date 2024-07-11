@@ -1,12 +1,20 @@
 import React from "react";
-import About from "../Components/About";
 import { Navbar } from "@/components/component/Navbar";
+import { Aboutfirst } from "./About";
+import MovingHeadline from "@/components/component/MovingHeadline";
+import Footer from "@/components/component/Footer";
+import { AboutSecond } from "@/components/component/AboutSecond";
+
+
 
 const page = () => {
   return (
     <div>
-        <Navbar/>
-      <About />
+      <MovingHeadline/>
+       <Navbar/> 
+      <Aboutfirst />
+      <AboutSecond/>
+      <Footer/>
     </div>
   );
 };

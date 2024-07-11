@@ -76,7 +76,7 @@ export function Blogs() {
         align: "start",
         loop: true,
       }}
-      className="w-full max-w-7xl mx-auto py-10 "
+      className="w-full max-w-6xl mx-auto py-10 "
     >
       <p className="font-bold w-[22%] mx-auto text-5xl py-4 text-center">Blogs</p>
       <CarouselContent>

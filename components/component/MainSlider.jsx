@@ -18,6 +18,7 @@ export function Slider() {
         autoPlay
         className="h-full w-full"
         interval={5000}
+        opts={{ loop: true, autoplay: true, pauseOnHover: false }}
       >
         <CarouselContent>
           <CarouselItem>
@@ -32,8 +33,7 @@ export function Slider() {
                   objectFit: "cover",
                 }}
                 quality={100}
-                layout="responsive"
-                priority
+               
                 width={1920}
               />
             </div>
@@ -51,8 +51,7 @@ export function Slider() {
                 }}
                 width={1920}
                 quality={100}
-                layout="responsive"
-                priority
+               
               />
             </div>
           </CarouselItem>
@@ -69,8 +68,7 @@ export function Slider() {
                 }}
                 width={1920}
                 quality={100}
-                layout="responsive"
-                priority
+               
               />
             </div>
           </CarouselItem>
@@ -87,8 +85,7 @@ export function Slider() {
                 }}
                 width={1920}
                 quality={100}
-                layout="responsive"
-                priority
+               
               />
             </div>
           </CarouselItem>
@@ -105,8 +102,7 @@ export function Slider() {
                 }}
                 width={1920}
                 quality={100}
-                layout="responsive"
-                priority
+               
               />
             </div>
           </CarouselItem>

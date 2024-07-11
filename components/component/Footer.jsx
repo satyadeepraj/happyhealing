@@ -83,7 +83,7 @@ export default function Footer() {
                 className="px-2 py-2  bg-transparent border border-black rounded-lg"
                 placeholder="Email Address"
               />
-              <button className=" bg-red-600 hover:bg-red-700 text-white  font-bold py-2 px-4 rounded-lg">
+              <button className=" bg-red-600 hover:bg-red-700 text-white  font-bold py-2 px-2 rounded-lg">
                 Subscribe
               </button>
             </form>

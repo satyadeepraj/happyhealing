@@ -16,8 +16,12 @@ export function Navbar() {
     <header className="w-full bg-background py-4 shadow-sm">
       <div className="container flex items-center justify-between px-4 md:px-6">
         <div className="flex items-center ">
-        <Image width={200} height={200} className="ml-20" src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719577111/HappyHealingDiagnostic/Happy_Healing_Diagnostics_new_logo_-_Copy_1_ujqqci.png"/>
-        
+          <Image
+            width={200}
+            height={200}
+            className="ml-20"
+            src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719577111/HappyHealingDiagnostic/Happy_Healing_Diagnostics_new_logo_-_Copy_1_ujqqci.png"
+          />
         </div>
         <div className="relative flex-1 max-w-md">
           <div className="absolute inset-y-0 left-0 flex items-center pl-2">
@@ -29,9 +33,14 @@ export function Navbar() {
             className="w-full rounded-md bg-muted pl-8 pr-4 py-2 text-sm"
           />
         </div>
-        <Button className="text-[#c50000] border border-[#c50000] p-4">Login</Button>
+        <Button
+          variant="outline"
+          className="text-[#c50000] border border-[#c50000] p-4"
+        >
+          Login
+        </Button>
       </div>
-      <nav className="container mt-4 flex justify-center gap-6 px-4 md:px-6">
+      <nav className="container mt-4 flex items-center justify-center gap-8 px-4 ml-24 md:px-6">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -42,7 +51,7 @@ export function Navbar() {
                 <div className="grid w-[200px] p-2 bg-white">
                   <NavigationMenuLink asChild>
                     <Link
-                      href="#"
+                      href="/about"
                       className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                       prefetch={false}
                     >
@@ -111,9 +120,8 @@ export function Navbar() {
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none ">
-                       Delhi
+                        Delhi
                       </div>
-                    
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
@@ -123,9 +131,8 @@ export function Navbar() {
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none ">
-                      Haryana
+                        Haryana
                       </div>
-                     
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
@@ -135,12 +142,10 @@ export function Navbar() {
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none ">
-                     Uttar Pradesh
+                        Uttar Pradesh
                       </div>
-                   
                     </Link>
                   </NavigationMenuLink>
-              
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
@@ -157,9 +162,8 @@ export function Navbar() {
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none ">
-                        CRM Software
+                        Scan
                       </div>
-                 
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
@@ -169,9 +173,8 @@ export function Navbar() {
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none ">
-                        Project Management
+                        Lab
                       </div>
-                  
                     </Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
@@ -181,33 +184,8 @@ export function Navbar() {
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none ">
-                        Analytics Platform
+                        Health Packages
                       </div>
-                 
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="#"
-                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                      prefetch={false}
-                    >
-                      <div className="text-sm font-medium leading-none ">
-                        E-commerce Platform
-                      </div>
-                    
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="#"
-                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                      prefetch={false}
-                    >
-                      <div className="text-sm font-medium leading-none ">
-                        HR Management
-                      </div>
-                  
                     </Link>
                   </NavigationMenuLink>
                 </div>
@@ -215,21 +193,18 @@ export function Navbar() {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>
-                <span>satya</span>
+                <span>Find A Test</span>
               </NavigationMenuTrigger>
               <NavigationMenuContent>
                 <div className="grid w-[400px] p-2">
                   <NavigationMenuLink asChild>
                     <Link
-                      href="#"
+                      href="/test/cbc"
                       className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none ">
-                        CRM Software
-                      </div>
-                      <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Manage your customer relationships.
+                        Search Test | CBC Test
                       </div>
                     </Link>
                   </NavigationMenuLink>
@@ -240,10 +215,7 @@ export function Navbar() {
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none ">
-                        Project Management
-                      </div>
-                      <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Plan and execute your projects.
+                        Book Pet Scan
                       </div>
                     </Link>
                   </NavigationMenuLink>
@@ -254,44 +226,66 @@ export function Navbar() {
                       prefetch={false}
                     >
                       <div className="text-sm font-medium leading-none ">
-                        Analytics Platform
-                      </div>
-                      <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Gain insights from your data.
-                      </div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="#"
-                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                      prefetch={false}
-                    >
-                      <div className="text-sm font-medium leading-none ">
-                        E-commerce Platform
-                      </div>
-                      <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Build and manage your online store.
-                      </div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="#"
-                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                      prefetch={false}
-                    >
-                      <div className="text-sm font-medium leading-none ">
-                        HR Management
-                      </div>
-                      <div className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                        Streamline your HR processes.
+                        Offers
                       </div>
                     </Link>
                   </NavigationMenuLink>
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
+
+            <Button variant="outline" className="border-none">
+              Health Packages
+            </Button>
+
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>
+                <span>Reach Us</span>
+              </NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <div className="grid w-[500px] p-2">
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="#"
+                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                      prefetch={false}
+                    >
+                      <div className="text-sm font-medium leading-none ">
+                        Contact Us
+                      </div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="#"
+                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                      prefetch={false}
+                    >
+                      <div className="text-sm font-medium leading-none ">
+                        Chat With Us
+                      </div>
+                    </Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href="#"
+                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                      prefetch={false}
+                    >
+                      <div className="text-sm font-medium leading-none ">
+                        Corporate Enquiry
+                      </div>
+                    </Link>
+                  </NavigationMenuLink>
+                </div>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <div className="pl-32">
+              {" "}
+              <Button variant="outline" className="border border-red-600 ">
+                Online Report
+              </Button>
+            </div>
           </NavigationMenuList>
         </NavigationMenu>
       </nav>
