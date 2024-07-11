@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Location from "../../public/Location.png";
-import phone from "../../public/phone.png";
+import phone from "../../public/Phone.png";
 export default function Footer() {
   return (
     <footer className="bg-gray-300 text-black font-sans">
