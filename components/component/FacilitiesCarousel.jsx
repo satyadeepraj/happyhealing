@@ -67,9 +67,9 @@ export function FacilityCarousel() {
         align: "start",
         loop: true,
       }}
-      className="w-full max-w-6xl mx-auto py-10 "
+      className="w-full mobile:w-[80%] max-w-6xl mx-auto py-10 mobile:py-0 mobile:pt-10 "
     >
-      <p className="font-bold w-[22%] mx-auto text-3xl text-center">Facilities</p>
+      <p className="font-bold w-[22%] mx-auto text-3xl text-center mobile:w-full mobile:text-center">Facilities</p>
       <CarouselContent>
         {facilities.map((facility, index) => (
           <CarouselItem key={index} className="md:basis-1/4">

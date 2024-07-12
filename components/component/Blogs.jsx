@@ -76,9 +76,9 @@ export function Blogs() {
         align: "start",
         loop: true,
       }}
-      className="w-full max-w-6xl mx-auto py-10 "
+      className="w-full mobile:w-[80%] max-w-6xl mx-auto py-10 "
     >
-      <p className="font-bold w-[22%] mx-auto text-5xl py-4 text-center">Blogs</p>
+      <p className="font-bold w-[22%] mx-auto text-5xl py-4 text-center mobile:w-full mobile:text-center">Blogs</p>
       <CarouselContent>
         {facilities.map((facility, index) => (
           <CarouselItem key={index} className="md:basis-1/4">

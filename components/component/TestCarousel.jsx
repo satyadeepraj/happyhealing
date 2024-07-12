@@ -27,12 +27,12 @@ export function TestCarousel() {
         align: "start",
         loop: true
       }}
-      className="w-full max-w-6xl mx-auto py-20"
-    > <p className="font-bold w-[20%] mx-auto text-3xl">Popular Tests</p>
+      className="w-full mobile:w-[80%]  max-w-6xl mx-auto py-20"
+    > <p className="font-bold w-[20%] mobile:w-full mobile:text-center  mx-auto  mobile:text-3xl text-3xl">Popular Tests</p>
       <CarouselContent>
        
         {tests.map((test, index) => (
-          <CarouselItem key={index} className="md:basis-1/4">
+          <CarouselItem key={index} className=" md:basis-1/4">
             <div className="py-8">
               <Card>
                 <CardContent className="">

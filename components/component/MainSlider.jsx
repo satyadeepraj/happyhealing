@@ -22,10 +22,10 @@ export function Slider() {
       >
         <CarouselContent>
           <CarouselItem>
-            <div className="relative h-full w-full overflow-hidden">
+            <div className="relative h-full  w-full overflow-hidden">
               <Image
                 alt="Carousel Image 1"
-                className="w-full  object-cover"
+                className="w-full mobile:h-[300px]  object-cover"
                 height={700}
                 src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719574942/HappyHealingDiagnostic/lab-worker-looking-at-vial-of-blood-scaled-1_sbggnk.jpg"
                 style={{
@@ -42,7 +42,7 @@ export function Slider() {
             <div className="relative h-full w-full overflow-hidden">
               <Image
                 alt="Carousel Image 2"
-                className="w-full  object-cover"
+                className="w-full mobile:h-[300px]  object-cover"
                 height={700}
                 src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719575761/HappyHealingDiagnostic/pexels-photo-248152_mgbatw.webp"
                 style={{
@@ -59,7 +59,7 @@ export function Slider() {
             <div className="relative h-full w-full overflow-hidden">
               <Image
                 alt="Carousel Image 3"
-                className="w-full  object-cover"
+                className="w-full mobile:h-[300px]  object-cover"
                 height={700}
                 src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719575762/HappyHealingDiagnostic/pexels-photo-356040_codtc4.webp"
                 style={{
@@ -76,7 +76,7 @@ export function Slider() {
             <div className="relative h-full w-full overflow-hidden">
               <Image
                 alt="Carousel Image 3"
-                className="w-full  object-cover"
+                className="w-full mobile:h-[300px]  object-cover"
                 height={700}
                 src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719575762/HappyHealingDiagnostic/pexels-photo-305565_ivviad.webp"
                 style={{
@@ -93,7 +93,7 @@ export function Slider() {
             <div className="relative h-full w-full overflow-hidden">
               <Image
                 alt="Carousel Image 3"
-                className="w-full  object-cover"
+                className="w-full mobile:h-[300px]  object-cover"
                 height={700}
                 src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719575761/HappyHealingDiagnostic/pexels-photo-3902732_u1qdaa.webp"
                 style={{

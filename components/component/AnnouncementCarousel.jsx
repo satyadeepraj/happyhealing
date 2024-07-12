@@ -28,11 +28,11 @@ export function AnnouncementCarousel() {
   };
 
   return (
-    <div className="bg-slate-200 pt-40 pb-28">
+    <div className="bg-slate-200 pt-40 mobile:pt-20 mobile:pb-14 pb-28">
     <Carousel
       interval={1000}
       autoplay
-      className="w-[90%] mx-auto"
+      className="w-[90%] mobile:w-[70%] mx-auto"
       opts={{
         align: "start",
         loop:true,
@@ -43,7 +43,7 @@ export function AnnouncementCarousel() {
     >
       <CarouselContent>
         <CarouselItem  className="md:basis-1/2 lg:basis-1/2">
-          <div className="grid grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
+          <div className="grid mobile:grid mobile:grid-cols-1 grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
             <img
               src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719575762/HappyHealingDiagnostic/pexels-photo-356040_codtc4.webp"
               alt="Card Image"
@@ -61,7 +61,7 @@ export function AnnouncementCarousel() {
           </div>
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-          <div className="grid grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
+          <div className="grid mobile:grid mobile:grid-cols-1 grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
             <img
               src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719575761/HappyHealingDiagnostic/pexels-photo-248152_mgbatw.webp"
               alt="Card Image"
@@ -79,7 +79,7 @@ export function AnnouncementCarousel() {
           </div>
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-          <div className="grid grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
+          <div className="grid mobile:grid mobile:grid-cols-1 grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
             <img
               src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719575761/HappyHealingDiagnostic/pexels-photo-3902732_u1qdaa.webp"
               alt="Card Image"
@@ -97,7 +97,7 @@ export function AnnouncementCarousel() {
           </div>
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-          <div className="grid grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
+          <div className="grid mobile:grid mobile:grid-cols-1 grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
             <img
               src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719687265/HappyHealingDiagnostic/pexels-photo-4226924_lw1qkt.webp"
               alt="Card Image"
@@ -115,7 +115,7 @@ export function AnnouncementCarousel() {
           </div>
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-          <div className="grid grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
+          <div className="grid mobile:grid mobile:grid-cols-1 grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
             <img
               src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719574942/HappyHealingDiagnostic/lab-worker-looking-at-vial-of-blood-scaled-1_sbggnk.jpg"
               alt="Card Image"
@@ -133,7 +133,7 @@ export function AnnouncementCarousel() {
           </div>
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-          <div className="grid grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
+          <div className="grid mobile:grid mobile:grid-cols-1 grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
             <img
               src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719691504/HappyHealingDiagnostic/woman-2141808_640_synbqc.jpg"
               alt="Card Image"
@@ -151,7 +151,7 @@ export function AnnouncementCarousel() {
           </div>
         </CarouselItem>
         <CarouselItem className="md:basis-1/2 lg:basis-1/2">
-          <div className="grid grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
+          <div className="grid mobile:grid mobile:grid-cols-1 grid-cols-2 rounded-lg overflow-hidden bg-red-500 text-white">
             <img
               src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719690956/HappyHealingDiagnostic/laboratory-2815641_1280_cythhe.jpg"
               alt="Card Image"

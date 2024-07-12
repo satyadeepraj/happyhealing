@@ -75,8 +75,8 @@ export function HealthCarousel() {
         align: "start",
         loop: true
       }}
-      className="w-full max-w-6xl mx-auto "
-    ><p className="font-bold w-[22%] mx-auto text-3xl">Health Packages</p>
+      className="w-full mobile:w-[80%] max-w-6xl mx-auto "
+    ><p className="font-bold w-[22%] mx-auto mobile:w-full mobile:text-center text-3xl">Health Packages</p>
       <CarouselContent >
         
         {tests.map((test, index) => (

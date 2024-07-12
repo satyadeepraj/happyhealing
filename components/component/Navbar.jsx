@@ -10,20 +10,30 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import Image from "next/image";
+import { MobileSheet } from "./MobileSheet";
 
 export function Navbar() {
   return (
-    <header className="w-full bg-background py-4 shadow-sm">
-      <div className="container flex items-center justify-between px-4 md:px-6">
-        <div className="flex items-center ">
+    <header className="w-full mobile:w-full bg-background py-4 shadow-sm">
+      <div className="container mobile:w-full mobile:mx-auto flex  items-center justify-between px-4 md:px-6">
+        <div className="flex items-center mobile:flex mobile:gap-1">
+          <div>
+            <MobileSheet />
+          </div>
           <Image
             width={200}
             height={200}
-            className="ml-20"
+            className="ml-20 mobile:w-[50%] mobile:mx-auto mobile:ml-0"
             src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719577111/HappyHealingDiagnostic/Happy_Healing_Diagnostics_new_logo_-_Copy_1_ujqqci.png"
           />
+           <Button
+          variant="outline"
+          className="text-[#c50000] border border-[#c50000] p-4 sm:hidden"
+        >
+          Login
+        </Button>
         </div>
-        <div className="relative flex-1 max-w-md">
+        <div className="relative mobile:hidden  flex-1 max-w-md">
           <div className="absolute inset-y-0 left-0 flex items-center pl-2">
             <SearchIcon className="h-5 w-5 text-muted-foreground" />
           </div>
@@ -33,14 +43,16 @@ export function Navbar() {
             className="w-full rounded-md bg-muted pl-8 pr-4 py-2 text-sm"
           />
         </div>
+        <div>
         <Button
           variant="outline"
-          className="text-[#c50000] border border-[#c50000] p-4"
+          className="text-[#c50000] border border-[#c50000] p-4 mobile:hidden"
         >
           Login
         </Button>
+        </div>
       </div>
-      <nav className="container mt-4 flex items-center justify-center gap-8 px-4 ml-24 md:px-6">
+      <nav className="container mobile:hidden mt-4 flex items-center justify-center gap-8 px-4 ml-24 md:px-6">
         <NavigationMenu>
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -289,6 +301,16 @@ export function Navbar() {
           </NavigationMenuList>
         </NavigationMenu>
       </nav>
+      <div className="relative sm:hidden mobile:space-y-4  flex-1 max-w-md">
+        <div className="absolute inset-y-0 left-0 flex items-center pl-2">
+          <SearchIcon className="h-5 w-5 text-muted-foreground" />
+        </div>
+        <Input
+          type="search"
+          placeholder="Find a Test....."
+          className="w-full rounded-md bg-muted pl-8 pr-4 py-2 text-sm"
+        />
+      </div>
     </header>
   );
 }

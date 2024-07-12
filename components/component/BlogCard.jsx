@@ -12,7 +12,7 @@ export function BlogCard({ title, description, imgSrc }) {
           </Link>
           <img
             alt={title}
-            className="h-80 w-full object-cover transition-all group-hover:scale-110 rounded-2xl"
+            className="h-80 mobile:h-60 w-full object-cover transition-all group-hover:scale-110 rounded-2xl"
             height={800}
             src={imgSrc}
             style={{
@@ -22,14 +22,14 @@ export function BlogCard({ title, description, imgSrc }) {
             width={600}
           />
         </CardHeader>
-        <div className="space-y-2 p-4">
+        <div className="space-y-2 mobile:space-y-0 mobile:p-0 p-4">
           <CardContent className="-mt-2">
             <h3 className="text-xl font-semibold group-hover:text-[#c50000] ">{title}</h3>
             <p className="text-gray-500 line-clamp-2">{description}</p>
           </CardContent>
           <CardFooter>
           
-              <Button variant="outline" className="text-[#c50000] border border-[#c50000] p-4">View More</Button>
+              <Button variant="outline" className="text-[#c50000] border border-[#c50000] p-4 ">View More</Button>
             
           </CardFooter>
         </div>
