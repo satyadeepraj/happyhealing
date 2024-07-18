@@ -3,9 +3,9 @@
 import Image from "next/image";
 export function Aboutfirst() {
   return (
-    <>
-      <div className="flex flex-col justify-center items-center h-[400px] ">
-        <div className="mb-4">
+    <div className="mobile:w-full">
+      <div className="flex mobile:flex mobile:flex-col mobile:w-full flex-col justify-center items-center h-[400px] mobile:mt-60 ">
+        <div className="mb-4 mobile:hidden">
           <img
             className="w-[30%] mx-auto"
             alt="Cremica Food Industries Limited"
@@ -14,11 +14,11 @@ export function Aboutfirst() {
             src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719767854/HappyHealingDiagnostic/Happy_Healing_Diagnostics_new_logo_-_Copy__1_-removebg-preview_sgwxf8.png"
           />
         </div>
-        <h2 className="text-[#444444] font-serif text-2xl font-bold">
+        <h2 className="text-[#444444] font-serif text-2xl mobile:text-xl font-bold">
           Happy_Healing_Diagnostics
         </h2>
         <div className="border border-r-[50px] border-red-600 mt-8"></div>
-        <div className="flex flex-row items-center justify-center gap-10 ml-14 mt-5">
+        <div className="flex mobile:flex mobile:flex-col  flex-row items-center justify-center gap-10 ml-14 mobile:ml-0 mt-5">
           <div className="w-[267px] h-[150px] ">
             <iframe
               width="267"
@@ -30,7 +30,7 @@ export function Aboutfirst() {
               allowFullScreen
             ></iframe>
           </div>
-          <div className="p-4 w-[1000px] font-sans flex-wrap">
+          <div className="p-4 mobile:p-2 mobile:w-full  w-[1000px] font-sans flex-wrap">
             <p className="text-[#444444] text-justify px-4 leading-relaxed ">
               Happy Healing Diagnostic, a name synonymous with excellence,
               precision, and patient care, is fast becoming a trusted name in
@@ -42,15 +42,17 @@ export function Aboutfirst() {
               of tests including blood work, genetic testing, pathology, and
               other specialized diagnostic services. Our state-of-the-art
               laboratory is equipped with the latest diagnostic equipment,
-              ensuring accurate and timely results. 
+              ensuring accurate and timely results.
             </p>
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-start w-[88%] mx-auto text-[#444444] font-sans mb-16">
-        <h1 className="py-8 font-bold text-5xl text-black">History</h1>
-        <div className="flex gap-6 mb-4">
-          <div className="w-[88%] text-justify leading-relaxed">
+      <div className="flex flex-col justify-center items-start w-[88%] mx-auto text-[#444444] font-sans mb-16 mobile:mt-[200px]">
+        <h1 className="py-8 mobile:py-4 font-bold text-5xl mobile:text-4xl text-black">
+          History
+        </h1>
+        <div className="flex mobile:flex mobile:flex-col gap-6 mb-4">
+          <div className="w-[88%] mobile:w-full text-justify leading-relaxed">
             <p className="mb-4">
               Happy Healing Diagnostic has a rich history of excellence in the
               field of lab pathology. Established in 2010, our diagnostic center
@@ -62,7 +64,7 @@ export function Aboutfirst() {
               state-of-the-art laboratory is equipped with the latest diagnostic
               equipment, ensuring precise and timely results.
             </p>
-            <p className=" mb-4">
+            <p className="mobile:hidden mb-4">
               Our team of experienced pathologists and technicians are dedicated
               to maintaining the highest standards of quality and accuracy. We
               take pride in our commitment to patient-centric care, providing
@@ -84,6 +86,6 @@ export function Aboutfirst() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

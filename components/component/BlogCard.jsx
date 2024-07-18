@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export function BlogCard({ title, description, imgSrc }) {
   return (
-    <Card className="w-full ">
+    <Card className="w-full">
       <div className="group relative overflow-hidden rounded-lg shadow-lg transition-all hover:shadow-xl">
         <CardHeader>
           <Link className="absolute inset-0 z-10" href="#">

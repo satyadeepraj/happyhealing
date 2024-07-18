@@ -14,9 +14,9 @@ import { MobileSheet } from "./MobileSheet";
 
 export function Navbar() {
   return (
-    <header className="w-full mobile:w-full bg-background py-4 shadow-sm">
+    <header className="w-full mobile:w-full bg-background py-4 shadow-md">
       <div className="container mobile:w-full mobile:mx-auto flex  items-center justify-between px-4 md:px-6">
-        <div className="flex items-center mobile:flex mobile:gap-1">
+        <div className="flex items-center mobile:flex  mobile:gap-6">
           <div>
             <MobileSheet />
           </div>
@@ -28,7 +28,7 @@ export function Navbar() {
           />
            <Button
           variant="outline"
-          className="text-[#c50000] border border-[#c50000] p-4 sm:hidden"
+          className="text-[#c50000] border border-[#c50000] p-4 mobile:p-2 sm:hidden"
         >
           Login
         </Button>
@@ -74,7 +74,7 @@ export function Navbar() {
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link
-                      href="#"
+                      href="/pricing"
                       className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                       prefetch={false}
                     >
@@ -107,7 +107,7 @@ export function Navbar() {
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link
-                      href="#"
+                      href="/blog"
                       className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
                       prefetch={false}
                     >
