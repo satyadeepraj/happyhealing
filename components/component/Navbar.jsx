@@ -119,90 +119,8 @@ export function Navbar() {
                 </div>
               </NavigationMenuContent>
             </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>
-                <span>Locate Us</span>
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <div className="grid w-[200px] p-2 bg-white">
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="#"
-                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                      prefetch={false}
-                    >
-                      <div className="text-sm font-medium leading-none ">
-                        Delhi
-                      </div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="#"
-                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                      prefetch={false}
-                    >
-                      <div className="text-sm font-medium leading-none ">
-                        Haryana
-                      </div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="#"
-                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                      prefetch={false}
-                    >
-                      <div className="text-sm font-medium leading-none ">
-                        Uttar Pradesh
-                      </div>
-                    </Link>
-                  </NavigationMenuLink>
-                </div>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <NavigationMenuTrigger>
-                <span>Facilities</span>
-              </NavigationMenuTrigger>
-              <NavigationMenuContent>
-                <div className="grid w-[400px] p-2">
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="#"
-                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                      prefetch={false}
-                    >
-                      <div className="text-sm font-medium leading-none ">
-                        Scan
-                      </div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="#"
-                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                      prefetch={false}
-                    >
-                      <div className="text-sm font-medium leading-none ">
-                        Lab
-                      </div>
-                    </Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link
-                      href="#"
-                      className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
-                      prefetch={false}
-                    >
-                      <div className="text-sm font-medium leading-none ">
-                        Health Packages
-                      </div>
-                    </Link>
-                  </NavigationMenuLink>
-                </div>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
+            
+          
             <NavigationMenuItem>
               <NavigationMenuTrigger>
                 <span>Find A Test</span>
@@ -246,9 +164,9 @@ export function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
 
-            <Button variant="outline" className="border-none">
+            <Link href="/health-packages" className="group hover:bg-gray-300 grid h-auto w-full items-center justify-start gap-1 rounded-md bg-background p-4 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50">
               Health Packages
-            </Button>
+            </Link>
 
             <NavigationMenuItem>
               <NavigationMenuTrigger>

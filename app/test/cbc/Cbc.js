@@ -1,18 +1,18 @@
 import Specialisation from "@/components/Test/Specialisation";
 import ToolTip from "@/components/Test/ToolTip";
 import React from "react";
-import { Label } from "@/components/ui/label"
-import { Switch } from "@/components/ui/switch"
+import { Label } from "@/components/ui/label";
+import { Switch } from "@/components/ui/switch";
 import { CardCart } from "@/components/component/CardCart";
 
 const Cbc = () => {
   return (
     <div>
-      <div className="container mx-auto py-8 grid grid-cols-1 md:grid-cols-2 ">
-        <div className="w-[120%] mx-auto">
+      <div className="container mobile:pr-2 mobile:pl-2 mobile:w-full mx-auto py-8 grid mobile:grid mobile:grid-cols-1 grid-cols-1 md:grid-cols-2 ">
+        <div className="w-[120%] mobile:w-full mx-auto">
           <div>
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="bg-gradient-to-r from-red-600 to-pink-300 h-24 text-4xl text-white font-semibold flex items-center px-4">
+              <div className="bg-gradient-to-r from-red-600 to-pink-300 h-24 text-4xl text-white font-semibold  flex items-center px-4">
                 CBC Test
               </div>
               <div className="p-4">
@@ -25,10 +25,10 @@ const Cbc = () => {
               </div>
             </div>
           </div>
-          <div className="flex gap-14 pt-4">
+          <div className="flex mobile:flex mobile:text-center mobile:flex-col gap-14 mobile:gap-4 pt-4">
             <p className="text-xl font-bold">Also Known As</p>
             <span className="">
-              <ToolTip />
+             <div className=""> <ToolTip /></div>
             </span>
           </div>
           <p className="py-8 text-justify leading-relaxed">
@@ -149,25 +149,24 @@ const Cbc = () => {
               </li>
             </ul>
           </div>
-          <div className="bg-slate-100 py-4 flex items-center px-4 gap-6 mb-4">
+          <div className="bg-slate-100 py-4 flex mobile:flex mobile:flex-col mobile:items-center items-center px-4 gap-6 mb-4">
             <p className="text-lg font-semibold">Test Preparation</p>
-            <span>:</span>
-            <p>No Special Preparation. Informed Consent Required.</p>
+            <span className="mobile:hidden">:</span>
+            <p className="mobile:text-center">No Special Preparation. Informed Consent Required.</p>
           </div>
           <div className="bg-slate-100 py-4 flex items-center px-4 gap-10 mb-4">
             <h3 className="text-lg font-semibold">Reporting TAT</h3>
             <span>:</span>
             <p>Same Day*</p>
           </div>
-          <div className="bg-slate-100 py-4 flex items-center px-4 gap-4">
+          <div className="bg-slate-100 py-4 flex mobile:flex mobile:flex-col mobile:items-center mobile:justify-center mobile:gap-4 items-center px-4 gap-4">
             <h3 className="text-lg font-semibold">Specialisation(s)</h3>
-            <span>:</span>
-            <Specialisation />
+            <span className="mobile:hidden">:</span>
+           <div className="text-center"><Specialisation /></div> 
           </div>
         </div>
-        <div className="flex ml-[200px] py-4">
-        <CardCart/>
-         
+        <div className="flex mobile:w-full mobile:ml-0 ml-[200px] py-4">
+          <CardCart />
         </div>
       </div>
     </div>

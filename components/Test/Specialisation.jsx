@@ -8,7 +8,7 @@ import {
 
 const Specialisation = () => {
   return (
-    <div className="space-y-2 space-x-2 ">
+    <div className="space-y-2 mobile:space-y-6 space-x-2 ">
       <TooltipProvider className="">
         <Tooltip>
           <TooltipTrigger>

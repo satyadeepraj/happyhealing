@@ -1,8 +1,8 @@
 export function AboutSecond() {
   return (
-    <div className="bg-background text-foreground">
-      <main className="container mx-auto">
-        <section className="w-full py-12 md:py-24 lg:py-10 bg-muted mb-12 md:mb-16 lg:mb-20">
+    <div className="mobile:w-full bg-background text-foreground">
+      <main className="container mobile:pr-0 mobile:pl-0  mx-auto">
+        <section className="w-full  py-12 md:py-24 lg:py-10 bg-muted mb-12 md:mb-16 lg:mb-20">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
               <img
@@ -70,7 +70,7 @@ export function AboutSecond() {
                   </p>
                 </div>
                 <div className="rounded-lg border border-gray-300 p-6">
-                  <div className="flex items-center gap-4">
+                  <div className="flex items-center gap-4 mobile:gap-1">
                     <div className="rounded-full bg-[#c50000] p-3">
                       <TableIcon className="h-6 w-6 text-primary-foreground" />
                     </div>
@@ -294,7 +294,7 @@ export function AboutSecond() {
                 width="100"
                 height="100"
                 alt="Acme Lab Pathology Team"
-                className="w-[70%] h-[600px] rounded-xl ml-20"
+                className="w-[70%] mobile:w-full mobile:ml-0 mobile:h-[400px] h-[600px] rounded-xl ml-20"
               />
             </div>
           </div>

@@ -25,15 +25,14 @@ export function Slider() {
             <div className="relative h-full  w-full overflow-hidden">
               <Image
                 alt="Carousel Image 1"
-                className="w-full mobile:h-[300px]  object-cover"
+                className="w-full mobile:h-[300px]  object-content"
                 height={700}
-                src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719574942/HappyHealingDiagnostic/lab-worker-looking-at-vial-of-blood-scaled-1_sbggnk.jpg"
+                src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1721325438/HappyHealingDiagnostic/Untitled-3_pw7juq.png"
                 style={{
                   aspectRatio: "1920/700",
-                  objectFit: "cover",
+                  objectFit: "content",
                 }}
                 quality={100}
-               
                 width={1920}
               />
             </div>
@@ -42,16 +41,47 @@ export function Slider() {
             <div className="relative h-full w-full overflow-hidden">
               <Image
                 alt="Carousel Image 2"
-                className="w-full mobile:h-[300px]  object-cover"
+                className="w-full mobile:h-[300px]  object-content"
                 height={700}
-                src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719575761/HappyHealingDiagnostic/pexels-photo-248152_mgbatw.webp"
+                src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1721325444/HappyHealingDiagnostic/Untitled-2_cwvb1n.png"
                 style={{
                   aspectRatio: "1920/700",
-                  objectFit: "cover",
+                  objectFit: "content",
                 }}
                 width={1920}
                 quality={100}
-               
+              />
+            </div>
+          </CarouselItem>
+          <CarouselItem>
+            <div className="relative h-full w-full overflow-hidden">
+              <Image
+                alt="Carousel Image 3"
+                className="w-full mobile:h-[300px]  object-content"
+                height={700}
+                src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1721325438/HappyHealingDiagnostic/Poster_7_eflkot.png"
+                style={{
+                  aspectRatio: "1920/700",
+                  objectFit: "content",
+                }}
+                width={1920}
+                quality={100}
+              />
+            </div>
+          </CarouselItem>
+          <CarouselItem>
+            <div className="relative h-full w-full overflow-hidden">
+              <Image
+                alt="Carousel Image 3"
+                className="w-full mobile:h-[300px]  object-content"
+                height={700}
+                src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719574942/HappyHealingDiagnostic/lab-worker-looking-at-vial-of-blood-scaled-1_sbggnk.jpg"
+                style={{
+                  aspectRatio: "1920/700",
+                  objectFit: "content",
+                }}
+                width={1920}
+                quality={100}
               />
             </div>
           </CarouselItem>
@@ -61,53 +91,17 @@ export function Slider() {
                 alt="Carousel Image 3"
                 className="w-full mobile:h-[300px]  object-cover"
                 height={700}
-                src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719575762/HappyHealingDiagnostic/pexels-photo-356040_codtc4.webp"
+                src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719690956/HappyHealingDiagnostic/laboratory-2815641_1280_cythhe.jpg"
                 style={{
                   aspectRatio: "1920/700",
                   objectFit: "cover",
                 }}
                 width={1920}
                 quality={100}
-               
-              />
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="relative h-full w-full overflow-hidden">
-              <Image
-                alt="Carousel Image 3"
-                className="w-full mobile:h-[300px]  object-cover"
-                height={700}
-                src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719575762/HappyHealingDiagnostic/pexels-photo-305565_ivviad.webp"
-                style={{
-                  aspectRatio: "1920/700",
-                  objectFit: "cover",
-                }}
-                width={1920}
-                quality={100}
-               
-              />
-            </div>
-          </CarouselItem>
-          <CarouselItem>
-            <div className="relative h-full w-full overflow-hidden">
-              <Image
-                alt="Carousel Image 3"
-                className="w-full mobile:h-[300px]  object-cover"
-                height={700}
-                src="https://res.cloudinary.com/dzkpb9csm/image/upload/v1719575761/HappyHealingDiagnostic/pexels-photo-3902732_u1qdaa.webp"
-                style={{
-                  aspectRatio: "1920/700",
-                  objectFit: "cover",
-                }}
-                width={1920}
-                quality={100}
-               
               />
             </div>
           </CarouselItem>
         </CarouselContent>
-      
       </Carousel>
     </>
   );

@@ -64,8 +64,17 @@ export function Blog() {
   ];
 
   return (
+    <div>
+      <div className="flex flex-col items-center justify-center py-10">
+      <h2 className="text-5xl font-bold ">
+        Blogs
+      </h2>
+      <p className="py-2 w-[70%] text-center mobile:text-center">
+      Happy Healing Diagnostic blogs keep you updated about the latest health trends. It also gives an insight into the new technology and informative articles on various health conditions.
+      </p>
+      </div>
     <div className="
-    grid grid-cols-4 mobile:grid mobile:grid-cols-1 gap-6 py-12" >
+    grid grid-cols-4 mobile:grid mobile:grid-cols-1 gap-6 py-12 px-6" >
       {facilities.map((facility, index) => (
         <AllBlogsCard
           key={index}
@@ -74,6 +83,7 @@ export function Blog() {
           imgSrc={facility.imgSrc}
         />
       ))}
+    </div>
     </div>
   );
 }
